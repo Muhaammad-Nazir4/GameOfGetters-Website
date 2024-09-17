@@ -1,0 +1,183 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    margin-top: -40;
+    padding-top: -10;
+    z-index: 4;
+  }
+  
+  .left-side {
+    width: 30%;
+    display: flex;
+    padding-left: 100px;
+    align-items: right ;
+    justify-content: center;
+  }
+  
+  .logo {
+
+    position: relative;
+    max-width: 40%;
+}
+  
+  .right-side {
+    width: 70%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding-right: 20px;
+  }
+
+  .nav-button-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-button-wrapper::after {
+    content: "";
+    height: 24px; 
+    width: 5px;
+    background-color: white;
+    position: absolute;
+    right: 6px; 
+
+  }
+  
+  .nav-button-wrapper:last-child::after {
+    display: none; 
+  }
+  
+  .nav-button {
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    padding-right: 50px; 
+    padding-left: 30px;
+    /* font-family:'Jeju Hallasan', sans-serif; */
+
+
+  }
+
+
+.mobile-menu-button {
+    display: none; 
+  }
+  
+  .mobile-modal {
+    position: absolute;
+    top: 100;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #646456 0%, #272727 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+  }
+  
+  .mobile-modal .nav-button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-family: 'Jeju Hallasan', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+  }
+  
+  @media (max-width: 900px) {
+    .right-side {
+      display: none; 
+    }
+    
+    .mobile-menu-button {
+      display: block;
+      background-color: transparent;
+      border: none;
+      margin-right: 10px;
+    }
+  }
+  
+
+.mobile-menu-button {
+    display: none; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 28px;
+  }
+  
+  .close-icon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .mobile-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 50; 
+  }
+  
+  .mobile-modal .nav-button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-family: 'Jeju Hallasan', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+  }
+  
+  @media (max-width: 768px) {
+    .right-side {
+      display: none; 
+    }
+    .logo {
+      position: absolute;
+      max-width: 27%;
+      z-index: 4;
+      left: 30px;
+      top:10px;
+  }
+    .mobile-menu-button {
+      display: block; 
+    }
+
+    
+
+
+
+
+
+  
+  }
+  

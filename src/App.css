@@ -1,0 +1,21 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'JejuHallasan';
+  src: url('./JejuHallasan-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+body {
+  background: linear-gradient(0deg, #646456 0%, #272727 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  font-family: 'JejuHallasan', sans-serif;
+}
+
